@@ -1,0 +1,242 @@
+/* ==========================================================================
+   AURA MARMOLERÍA - ESTILOS PERSONALIZADOS & MICRO-INTERACCIONES
+   ========================================================================== */
+
+:root {
+  --color-sand: #FAF8F5;
+  --color-stone: #EFECE6;
+  --color-gold: #C5A880;
+  --color-gold-light: #E4D5BC;
+  --color-gold-dark: #9A7B54;
+  --color-charcoal: #121417;
+  --color-graphite: #1C1F24;
+  --color-emerald: #1B3B2B;
+}
+
+/* Tipografías fluidas y renderizado nítido */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #2D3139;
+  background-color: #FDFBF7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-serif-title {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Efectos de fondo con vetas y texturas sutiles */
+.bg-marble-subtle {
+  background-color: #FAF8F5;
+  background-image: 
+    radial-gradient(at 10% 20%, rgba(197, 168, 128, 0.05) 0px, transparent 50%),
+    radial-gradient(at 90% 80%, rgba(27, 59, 43, 0.04) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(18, 20, 23, 0.02) 0px, transparent 50%);
+}
+
+.bg-dark-marble {
+  background-color: #121417;
+  background-image: 
+    radial-gradient(at 80% 20%, rgba(197, 168, 128, 0.12) 0px, transparent 60%),
+    radial-gradient(at 20% 80%, rgba(35, 40, 48, 0.5) 0px, transparent 60%);
+}
+
+/* Borde dorado de lujo */
+.border-gold-subtle {
+  border-color: rgba(197, 168, 128, 0.25);
+}
+
+.border-gold-glow:hover {
+  border-color: rgba(197, 168, 128, 0.8);
+  box-shadow: 0 10px 30px -10px rgba(197, 168, 128, 0.25);
+}
+
+/* Tarjetas con efecto Glassmorphism suave */
+.glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(230, 225, 215, 0.8);
+}
+
+.glass-card-dark {
+  background: rgba(24, 27, 33, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(197, 168, 128, 0.18);
+}
+
+/* Efecto de brillo metálico en botones */
+.btn-gold {
+  background: linear-gradient(135deg, #D4AF37 0%, #C5A880 50%, #B39265 100%);
+  color: #0F1115;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gold::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  transition: 0.6s ease;
+}
+
+.btn-gold:hover::before {
+  left: 100%;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px -8px rgba(197, 168, 128, 0.5);
+}
+
+.btn-gold:active {
+  transform: translateY(0);
+}
+
+/* Animaciones suaves al scroll */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slider y controles personalizados */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #E5E0D8;
+  border-radius: 4px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #C5A880;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  background: #9A7B54;
+}
+
+/* Acordeón FAQ suave */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  opacity: 0;
+}
+
+.faq-item.active .faq-content {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+  color: #C5A880;
+}
+
+/* Modal lightbox */
+.modal-overlay {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-box {
+  transform: scale(0.95) translateY(15px);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.active .modal-box {
+  transform: scale(1) translateY(0);
+}
+
+/* Tarjetas de proyectos con zoom suave */
+.project-card {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card .project-img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.06);
+}
+
+/* Notificación Toast */
+.toast {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
+}
+
+.toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Indicador de radar o barras de especificaciones */
+.meter-bar-fill {
+  transition: width 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Pulse animation for live online indicator */
+@keyframes soft-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.25); opacity: 0.75; }
+}
+
+.pulse-dot {
+  animation: soft-pulse 2s infinite ease-in-out;
+}
+
+/* Scrollbar estilizada */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4F1EA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1C7B7;
+  border-radius: 6px;
+  border: 2px solid #F4F1EA;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A880;
+}

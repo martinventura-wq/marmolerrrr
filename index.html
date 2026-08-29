@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA Marmolería & Superficies de Autor | Mármoles, Granitos y Cuarzos a Medida</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="Marmolería de alta gama especializada en mesadas de cocina, vanitories, islas monolíticas y revestimientos en mármoles importados, granitos, cuarzos y superficies sinterizadas. Corte CNC y colocación garantizada.">
+  <meta name="keywords" content="marmolería, mesadas de cocina, mármol carrara, granito negro absoluto, silestone, dekton, vanitories, cuarzo, mesadas a medida, corte con agua">
+  <meta name="author" content="AURA Marmolería de Autor">
+  <meta property="og:title" content="AURA Marmolería & Superficies de Autor | Piedras Naturales Premium">
+  <meta property="og:description" content="Diseño, corte de precisión y colocación garantizada de mármoles, granitos y cuarzos para hogares y proyectos arquitectónicos.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+  
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              sand: '#FAF8F5',
+              stone: '#EFECE6',
+              gold: '#C5A880',
+              goldDark: '#9A7B54',
+              charcoal: '#121417',
+              graphite: '#1C1F24',
+              emerald: '#1B3B2B'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/custom.css">
+  
+  <!-- Schema.org Structured Data for Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeGoodsStore",
+    "name": "AURA Marmolería & Superficies de Autor",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    "description": "Especialistas en corte CNC, mecanizado y colocación de mármoles naturales, granitos y cuarzos compactos para mesadas y revestimientos.",
+    "telephone": "+54-11-5555-4321",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Del Mármol y Diseño 2450",
+      "addressLocality": "Buenos Aires",
+      "addressRegion": "CABA",
+      "postalCode": "C1425",
+      "addressCountry": "AR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:30",
+        "closes": "18:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "13:30"
+      }
+    ],
+    "priceRange": "$$$"
+  }
+  </script>
+</head>
+<body class="bg-brand-sand text-stone-800 antialiased selection:bg-brand-gold selection:text-brand-charcoal">
+
+  <!-- =========================================================================
+       HEADER FIJO Y NAVEGACIÓN
+       ========================================================================= -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5 bg-white/90 backdrop-blur-md border-b border-stone-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg bg-brand-charcoal flex items-center justify-center text-brand-gold font-serif text-2xl font-bold shadow-md group-hover:scale-105 transition-transform">
+          A
+        </div>
+        <div>
+          <span class="font-serif text-2xl font-bold tracking-tight text-brand-charcoal block leading-none">AURA</span>
+          <span class="text-[10px] tracking-[0.2em] uppercase font-semibold text-stone-500 block mt-1">Marmolería de Autor</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-stone-600">
+        <a href="#materiales" class="hover:text-brand-goldDark transition-colors">Materiales</a>
+        <a href="#servicios" class="hover:text-brand-goldDark transition-colors">Servicios</a>
+        <a href="#cotizador" class="hover:text-brand-goldDark transition-colors flex items-center gap-1.5 font-semibold text-stone-900">
+          <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+          Cotizador Rápido
+        </a>
+        <a href="#comparador" class="hover:text-brand-goldDark transition-colors">Comparador</a>
+        <a href="#proyectos" class="hover:text-brand-goldDark transition-colors">Proyectos</a>
+        <a href="#proceso" class="hover:text-brand-goldDark transition-colors">Proceso</a>
+        <a href="#preguntas" class="hover:text-brand-goldDark transition-colors">FAQ</a>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="hidden sm:flex items-center gap-4">
+        <div class="hidden xl:flex items-center gap-2 text-xs font-semibold text-stone-600 bg-stone-100/80 px-3 py-1.5 rounded-full border border-stone-200">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 pulse-dot"></span>
+          Asesores en línea
+        </div>
+        <a href="https://wa.me/5491155554321?text=Hola%20AURA%20Marmoler%C3%ADa,%20quisiera%20asesorarme%20sobre%20un%20proyecto%20de%20mesada%20o%20revestimiento." target="_blank" class="btn-gold text-xs uppercase tracking-wider py-2.5 px-5 rounded-full flex items-center gap-2 shadow-sm">
+          <i data-lucide="message-circle" class="w-4 h-4 text-brand-charcoal"></i>
+          <span>WhatsApp Directo</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-toggle" aria-label="Abrir menú" class="lg:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100 focus:outline-none">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 bg-brand-charcoal text-white transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex flex-col justify-between p-6 pt-24 overflow-y-auto">
+    <div class="space-y-6 text-lg font-serif">
+      <a href="#materiales" class="nav-link-item block py-2 border-b border-stone-800 hover:text-brand-gold">Catálogo de Materiales</a>
+      <a href="#servicios" class="nav-link-item block py-2 border-b border-stone-800 hover:text-brand-gold">Nuestros Servicios</a>
+      <a href="#cotizador" class="nav-link-item block py-2 border-b border-stone-800 text-brand-gold font-bold">Simulador de Presupuesto</a>
+      <a href="#comparador" class="nav-link-item block py-2 border-b border-stone-800 hover:text-brand-gold">Comparador de Piedras</a>
+      <a href="#proyectos" class="nav-link-item block py-2 border-b border-stone-800 hover:text-brand-gold">Galería de Proyectos</a>
+      <a href="#proceso" class="nav-link-item block py-2 border-b border-stone-800 hover:text-brand-gold">Proceso en 4 Pasos</a>
+      <a href="#preguntas" class="nav-link-item block py-2 border-b border-stone-800 hover:text-brand-gold">Preguntas Frecuentes</a>
+      <a href="#contacto" class="nav-link-item block py-2 text-stone-400 hover:text-white">Solicitar Visita a Domicilio</a>
+    </div>
+
+    <div class="pt-8 border-t border-stone-800 space-y-4">
+      <div class="flex items-center gap-3 text-xs text-stone-400">
+        <i data-lucide="phone-call" class="w-4 h-4 text-brand-gold"></i>
+        <span>Atención directa: +54 (11) 5555-4321</span>
+      </div>
+      <a href="https://wa.me/5491155554321" target="_blank" class="w-full text-center btn-gold py-3.5 rounded-xl font-bold flex items-center justify-center gap-2">
+        <i data-lucide="message-circle" class="w-5 h-5"></i>
+        <span>Chatear por WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       HERO SECTION
+       ========================================================================= -->
+  <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-marble-subtle">
+    <!-- Decoración de fondo -->
+    <div class="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 rounded-full bg-amber-100/40 blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 -ml-40 -mb-40 w-96 h-96 rounded-full bg-stone-200/50 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Columna de Texto & CTAs -->
+        <div class="lg:col-span-7 space-y-7 reveal-on-scroll">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-100 border border-stone-200 text-xs font-semibold text-stone-700">
+            <span class="w-2 h-2 rounded-full bg-brand-gold"></span>
+            <span>Marmolería Industrial & Taller Artesanal</span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-charcoal leading-[1.12] tracking-tight">
+            Mármol natural <br class="hidden sm:inline">a medida para tu hogar <br class="hidden sm:inline">
+            <span class="italic text-brand-goldDark font-normal">o proyecto de diseño.</span>
+          </h1>
+
+          <p class="text-stone-600 text-base sm:text-lg max-w-xl font-normal leading-relaxed">
+            Mesadas de cocina de alta durabilidad, vanitories monolíticos, islas y revestimientos arquitectónicos. Combinamos la precisión del corte CNC con la maestría de artesanos marmoleros.
+          </p>
+
+          <!-- Categorías de Acceso Rápido -->
+          <div class="pt-2">
+            <p class="text-xs font-bold uppercase tracking-wider text-stone-500 mb-3">Accesos rápidos por categoría:</p>
+            <div class="flex flex-wrap gap-2.5">
+              <a href="#servicios" class="px-4 py-2 rounded-lg bg-white border border-stone-200 hover:border-brand-gold hover:text-brand-goldDark text-xs font-semibold text-stone-700 transition-all shadow-sm flex items-center gap-2">
+                <i data-lucide="utensils" class="w-3.5 h-3.5 text-brand-gold"></i>
+                <span>Cocinas & Islas</span>
+              </a>
+              <a href="#servicios" class="px-4 py-2 rounded-lg bg-white border border-stone-200 hover:border-brand-gold hover:text-brand-goldDark text-xs font-semibold text-stone-700 transition-all shadow-sm flex items-center gap-2">
+                <i data-lucide="bath" class="w-3.5 h-3.5 text-brand-gold"></i>
+                <span>Baños & Vanitories</span>
+              </a>
+              <a href="#servicios" class="px-4 py-2 rounded-lg bg-white border border-stone-200 hover:border-brand-gold hover:text-brand-goldDark text-xs font-semibold text-stone-700 transition-all shadow-sm flex items-center gap-2">
+                <i data-lucide="layers" class="w-3.5 h-3.5 text-brand-gold"></i>
+                <span>Revestimientos & Especiales</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- CTAs Principales -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3">
+            <a href="#cotizador" class="btn-gold py-4 px-8 rounded-xl font-bold text-sm tracking-wide text-center shadow-lg flex items-center justify-center gap-2">
+              <i data-lucide="calculator" class="w-4 h-4"></i>
+              <span>Calcular Presupuesto Online</span>
+            </a>
+            <a href="#materiales" class="py-4 px-7 rounded-xl font-semibold text-sm text-stone-800 bg-white hover:bg-stone-50 border border-stone-200 transition-all text-center flex items-center justify-center gap-2">
+              <span>Ver Placas & Materiales</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-stone-400"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Columna Visual Hero (Showcase) -->
+        <div class="lg:col-span-5 reveal-on-scroll">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Marco Principal de Imagen -->
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] bg-stone-900">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="Isla de cocina en mármol de alta gama" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              
+              <div class="absolute bottom-6 left-6 right-6 text-white space-y-2">
+                <span class="text-[11px] font-bold uppercase tracking-widest text-amber-300 bg-black/50 backdrop-blur-md px-3 py-1 rounded-full">
+                  Obra Destacada
+                </span>
+                <h3 class="font-serif text-xl font-bold leading-snug">Isla de Cocina con Cascada Doble</h3>
+                <p class="text-xs text-stone-300">Cuarcita Calacatta Gold con vetas bookmatched continuas a piso.</p>
+              </div>
+            </div>
+
+            <!-- Badge Flotante Superior -->
+            <div class="absolute -top-4 -right-4 glass-card p-4 rounded-2xl shadow-xl hidden sm:flex items-center gap-3 border border-stone-200/80 max-w-[210px]">
+              <div class="w-10 h-10 rounded-full bg-emerald-900/10 flex items-center justify-center text-emerald-800">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-stone-900 leading-tight">Garantía Escrita</p>
+                <p class="text-[10px] text-stone-500">Instalación y sellado 100% garantizado</p>
+              </div>
+            </div>
+
+            <!-- Badge Flotante Inferior Izquierdo -->
+            <div class="absolute -bottom-5 -left-4 glass-card p-4 rounded-2xl shadow-xl hidden sm:flex items-center gap-3 border border-stone-200/80">
+              <div class="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-800">
+                <i data-lucide="ruler" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-stone-900 leading-tight">Plantillado Láser 3D</p>
+                <p class="text-[10px] text-stone-500">Cero descuadre en paredes</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 3 Métricas y Estadísticas Destacadas -->
+      <div id="hero-stats" class="mt-16 sm:mt-24 pt-12 border-t border-stone-200/80 grid grid-cols-1 sm:grid-cols-3 gap-8">
+        
+        <div class="flex items-center gap-4 bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-stone-200/60 shadow-sm reveal-on-scroll">
+          <div class="w-14 h-14 rounded-2xl bg-amber-50 flex items-center justify-center text-amber-800 flex-shrink-0">
+            <i data-lucide="check-circle" class="w-7 h-7"></i>
+          </div>
+          <div>
+            <div class="flex items-baseline gap-1">
+              <span class="text-3xl font-bold font-serif text-brand-charcoal stat-counter" data-target="1250">0</span>
+              <span class="text-xl font-bold text-brand-gold">+</span>
+            </div>
+            <p class="text-xs font-semibold text-stone-500 uppercase tracking-wider mt-0.5">Proyectos Entregados</p>
+            <p class="text-[11px] text-stone-400">Cocinas, baños y obras premium</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4 bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-stone-200/60 shadow-sm reveal-on-scroll">
+          <div class="w-14 h-14 rounded-2xl bg-stone-100 flex items-center justify-center text-stone-800 flex-shrink-0">
+            <i data-lucide="award" class="w-7 h-7"></i>
+          </div>
+          <div>
+            <div class="flex items-baseline gap-1">
+              <span class="text-3xl font-bold font-serif text-brand-charcoal stat-counter" data-target="18">0</span>
+              <span class="text-sm font-bold text-brand-gold">Años</span>
+            </div>
+            <p class="text-xs font-semibold text-stone-500 uppercase tracking-wider mt-0.5">Trayectoria Familiar</p>
+            <p class="text-[11px] text-stone-400">Maestría artesanal y corte CNC</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4 bg-white/70 backdrop-blur-sm p-6 rounded-2xl border border-stone-200/60 shadow-sm reveal-on-scroll">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-50 flex items-center justify-center text-emerald-800 flex-shrink-0">
+            <i data-lucide="sparkles" class="w-7 h-7"></i>
+          </div>
+          <div>
+            <div class="flex items-baseline gap-1">
+              <span class="text-3xl font-bold font-serif text-brand-charcoal stat-counter" data-target="100">0</span>
+              <span class="text-xl font-bold text-emerald-700">%</span>
+            </div>
+            <p class="text-xs font-semibold text-stone-500 uppercase tracking-wider mt-0.5">Garantía en Colocación</p>
+            <p class="text-[11px] text-stone-400">Flete seguro y sellado hidrófugo</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CALCULADORA / COTIZADOR RÁPIDO INTERACTIVO
+       ========================================================================= -->
+  <section id="cotizador" class="py-24 bg-white relative border-y border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Título de Sección -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3 reveal-on-scroll">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-goldDark bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200/60">
+          Simulador en Tiempo Real
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal">
+          Cotizador Rápido de Mesadas y Superficies
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base">
+          Elegí tu tipo de espacio, material y dimensiones aproximadas para obtener una estimación inmediata y solicitar una visita técnica con muestras reales.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Panel Izquierdo: Configuración del Simulador -->
+        <div class="lg:col-span-7 bg-brand-sand p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-8 reveal-on-scroll">
+          
+          <!-- Paso 1: Tipo de Ambiente -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-3 flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-brand-charcoal text-white text-[11px] flex items-center justify-center">1</span>
+              <span>Tipo de Ambiente o Proyecto</span>
+            </label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+              <label class="cursor-pointer">
+                <input type="radio" name="calc-space" value="Cocina / Isla Principal" class="peer sr-only" checked>
+                <div class="p-3.5 rounded-2xl bg-white border border-stone-200 text-center peer-checked:border-brand-charcoal peer-checked:bg-brand-charcoal peer-checked:text-white transition-all shadow-sm">
+                  <i data-lucide="utensils" class="w-5 h-5 mx-auto mb-1 text-stone-500 peer-checked:text-brand-gold"></i>
+                  <span class="text-xs font-semibold block">Cocina / Isla</span>
+                </div>
+              </label>
+              
+              <label class="cursor-pointer">
+                <input type="radio" name="calc-space" value="Baño / Vanitory Suite" class="peer sr-only">
+                <div class="p-3.5 rounded-2xl bg-white border border-stone-200 text-center peer-checked:border-brand-charcoal peer-checked:bg-brand-charcoal peer-checked:text-white transition-all shadow-sm">
+                  <i data-lucide="bath" class="w-5 h-5 mx-auto mb-1 text-stone-500 peer-checked:text-brand-gold"></i>
+                  <span class="text-xs font-semibold block">Baño / Bacha</span>
+                </div>
+              </label>
+              
+              <label class="cursor-pointer">
+                <input type="radio" name="calc-space" value="Mesada Quincho / Exterior" class="peer sr-only">
+                <div class="p-3.5 rounded-2xl bg-white border border-stone-200 text-center peer-checked:border-brand-charcoal peer-checked:bg-brand-charcoal peer-checked:text-white transition-all shadow-sm">
+                  <i data-lucide="flame" class="w-5 h-5 mx-auto mb-1 text-stone-500 peer-checked:text-brand-gold"></i>
+                  <span class="text-xs font-semibold block">Quincho / Parrilla</span>
+                </div>
+              </label>
+
+              <label class="cursor-pointer">
+                <input type="radio" name="calc-space" value="Escalera / Revestimiento" class="peer sr-only">
+                <div class="p-3.5 rounded-2xl bg-white border border-stone-200 text-center peer-checked:border-brand-charcoal peer-checked:bg-brand-charcoal peer-checked:text-white transition-all shadow-sm">
+                  <i data-lucide="layers" class="w-5 h-5 mx-auto mb-1 text-stone-500 peer-checked:text-brand-gold"></i>
+                  <span class="text-xs font-semibold block">Escalera / Muro</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Paso 2: Tipo de Material / Piedra -->
+          <div>
+            <label for="calc-material" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2 flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-brand-charcoal text-white text-[11px] flex items-center justify-center">2</span>
+              <span>Selección de Material o Piedra</span>
+            </label>
+            <select id="calc-material" class="w-full bg-white border border-stone-200 rounded-xl px-4 py-3 text-sm font-medium text-stone-800 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold shadow-sm">
+              <option value="granito-importado" selected>Granito Negro Absoluto Brasil (Altísima Durabilidad / Clásico)</option>
+              <option value="granito-nacional">Granito Nacional Gris Mara / San Felipe (Económico & Resistente)</option>
+              <option value="marmol-carrara">Mármol Blanco Carrara Italiano (Vetas Finas / Elegancia Atemporal)</option>
+              <option value="marmol-travertino">Mármol Travertino Rústico / Resinado (Cálido / Estilo Mediterráneo)</option>
+              <option value="cuarzo-compacto">Cuarzo Compacto Tipo Silestone (Cero Porosidad / Blanco Puro)</option>
+              <option value="sinterizado-dekton">Superficie Sinterizada Tipo Dekton (Inmune a Manchas y Fuego)</option>
+              <option value="cuarcita-exotica">Cuarcita Exótica Patagonia / Taj Mahal (Piedra Fina de Colección)</option>
+              <option value="onix-translucido">Ónix Natural Translúcido (Para Retroiluminar con LED)</option>
+            </select>
+          </div>
+
+          <!-- Paso 3: Metros Lineales Aproximados -->
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <label for="calc-meters-range" class="text-xs font-bold uppercase tracking-wider text-stone-700 flex items-center gap-2">
+                <span class="w-5 h-5 rounded-full bg-brand-charcoal text-white text-[11px] flex items-center justify-center">3</span>
+                <span>Longitud Estimada (Metros Lineales)</span>
+              </label>
+              <span id="calc-meters-val" class="font-serif text-lg font-bold text-brand-charcoal bg-white px-3 py-0.5 rounded-lg border border-stone-200 shadow-sm">
+                3.5 m
+              </span>
+            </div>
+            <input type="range" id="calc-meters-range" min="1.0" max="12.0" step="0.5" value="3.5" class="w-full">
+            <div class="flex justify-between text-[11px] text-stone-500 mt-1 font-medium">
+              <span>1.0 m (Vanitory individual)</span>
+              <span>3.5 m (Cocina estándar)</span>
+              <span>7.0 m (Cocina + Isla)</span>
+              <span>12.0 m (Gran Residencia)</span>
+            </div>
+          </div>
+
+          <!-- Paso 4: Terminación de Borde -->
+          <div>
+            <label for="calc-finish" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2 flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-brand-charcoal text-white text-[11px] flex items-center justify-center">4</span>
+              <span>Terminación y Borde de Mesada</span>
+            </label>
+            <select id="calc-finish" class="w-full bg-white border border-stone-200 rounded-xl px-4 py-3 text-sm font-medium text-stone-800 focus:outline-none focus:border-brand-gold shadow-sm">
+              <option value="regruesado" selected>Ingleteado / Regruesado 4cm a 45° (Moderno y Robusto)</option>
+              <option value="simple">Borde Simple Pulido 2cm (Minimalista / Estándar)</option>
+              <option value="cascada">Borde Cascada a Piso (Caída lateral continua)</option>
+              <option value="pecho-paloma">Pecho de Paloma / Borde Clásico Moldurado</option>
+            </select>
+          </div>
+
+          <!-- Paso 5: Opciones y Trasforos Adicionales -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-3 flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-brand-charcoal text-white text-[11px] flex items-center justify-center">5</span>
+              <span>Trabajos de Taller y Trasforos</span>
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-stone-200 cursor-pointer hover:bg-stone-50">
+                <input type="checkbox" id="calc-opt-sink" checked class="w-4 h-4 text-brand-gold rounded border-stone-300 focus:ring-brand-gold">
+                <span class="text-xs font-semibold text-stone-700">Trasforo para bacha bajo mesada</span>
+              </label>
+              
+              <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-stone-200 cursor-pointer hover:bg-stone-50">
+                <input type="checkbox" id="calc-opt-cooktop" checked class="w-4 h-4 text-brand-gold rounded border-stone-300 focus:ring-brand-gold">
+                <span class="text-xs font-semibold text-stone-700">Trasforo para anafe / vitrocerámica</span>
+              </label>
+
+              <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-stone-200 cursor-pointer hover:bg-stone-50">
+                <input type="checkbox" id="calc-opt-backsplash" checked class="w-4 h-4 text-brand-gold rounded border-stone-300 focus:ring-brand-gold">
+                <span class="text-xs font-semibold text-stone-700">Zócalos perimetrales (5 a 8 cm)</span>
+              </label>
+
+              <label class="flex items-center gap-3 p-3 bg-white rounded-xl border border-stone-200 cursor-pointer hover:bg-stone-50">
+                <input type="checkbox" id="calc-opt-drain" class="w-4 h-4 text-brand-gold rounded border-stone-300 focus:ring-brand-gold">
+                <span class="text-xs font-semibold text-stone-700">Escurridor mecanizado en piedra</span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Panel Derecho: Resumen y Resultado Estimado -->
+        <div class="lg:col-span-5 bg-brand-charcoal text-white p-7 sm:p-9 rounded-3xl shadow-2xl border border-brand-gold/30 sticky top-28 space-y-6 reveal-on-scroll">
+          
+          <div class="flex items-center justify-between border-b border-stone-800 pb-4">
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-amber-400 block">Presupuesto Estimado</span>
+              <h3 class="font-serif text-xl font-bold text-white">Resumen de Cotización</h3>
+            </div>
+            <div class="w-9 h-9 rounded-full bg-stone-800 flex items-center justify-center text-amber-300">
+              <i data-lucide="receipt" class="w-5 h-5"></i>
+            </div>
+          </div>
+
+          <!-- Tarjeta de Rango de Inversión -->
+          <div class="bg-stone-900/90 rounded-2xl p-5 border border-stone-800 space-y-2">
+            <p class="text-xs text-stone-400 font-medium">Rango estimado de inversión (Material + Mano de obra):</p>
+            <div class="flex items-baseline gap-2">
+              <span id="calc-price-min" class="font-serif text-2xl sm:text-3xl font-bold text-amber-300">USD $1,150</span>
+              <span class="text-stone-500 font-serif text-xl">-</span>
+              <span id="calc-price-max" class="font-serif text-2xl sm:text-3xl font-bold text-amber-300">USD $1,320</span>
+            </div>
+            <p class="text-[11px] text-stone-400 italic leading-snug">
+              * Valores orientativos sujetos a confirmación con plano técnico o relevamiento in situ. Incluye mecanizado de bordes y cortes.
+            </p>
+          </div>
+
+          <!-- Desglose de Parámetros -->
+          <div class="space-y-2.5 text-xs text-stone-300">
+            <div class="flex justify-between py-1 border-b border-stone-800/80">
+              <span class="text-stone-400">Ambiente:</span>
+              <span id="calc-summary-space" class="font-semibold text-white">Cocina / Isla</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-stone-800/80">
+              <span class="text-stone-400">Material:</span>
+              <span id="calc-summary-material" class="font-semibold text-amber-200">Granito Negro Absoluto</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-stone-800/80">
+              <span class="text-stone-400">Metraje:</span>
+              <span id="calc-summary-meters" class="font-semibold text-white">3.5 metros lineales</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-stone-800/80">
+              <span class="text-stone-400">Terminación:</span>
+              <span id="calc-summary-finish" class="font-semibold text-white">Regruesado 4cm a 45°</span>
+            </div>
+            <div class="flex justify-between py-1">
+              <span class="text-stone-400">Detalles adicionales:</span>
+              <span id="calc-summary-cutouts" class="font-semibold text-white text-right max-w-[200px]">Bacha, anafe y zócalo</span>
+            </div>
+          </div>
+
+          <!-- Beneficios incluidos -->
+          <div class="bg-stone-900/60 p-4 rounded-xl space-y-2 text-[11px] text-stone-300 border border-stone-800">
+            <div class="flex items-center gap-2 text-emerald-400 font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i>
+              <span>Relevamiento y plantillado láser a domicilio</span>
+            </div>
+            <div class="flex items-center gap-2 text-emerald-400 font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i>
+              <span>Flete con embalaje técnico y seguro de traslado</span>
+            </div>
+            <div class="flex items-center gap-2 text-emerald-400 font-semibold">
+              <i data-lucide="check" class="w-3.5 h-3.5"></i>
+              <span>Colocación final y sellado hidro-oleófugo</span>
+            </div>
+          </div>
+
+          <!-- CTA de Envío directo a WhatsApp -->
+          <a id="calc-whatsapp-btn" href="#" target="_blank" class="w-full btn-gold py-4 px-6 rounded-xl font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2.5 shadow-lg">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span>Enviar esta cotización por WhatsApp</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CATÁLOGO DE MATERIALES & TEXTURAS
+       ========================================================================= -->
+  <section id="materiales" class="py-24 bg-brand-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 reveal-on-scroll">
+        <div class="space-y-3 max-w-2xl">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-goldDark bg-stone-200/70 px-3.5 py-1.5 rounded-full">
+            Selección Geológica
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal">
+            Piedras Naturales y Superficies de Ingeniería
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base">
+            Importamos tablas enteras directamente desde canteras de Italia, España, Brasil y yacimientos nacionales para garantizar vetas continuas y tonalidades parejas.
+          </p>
+        </div>
+        <div class="mt-6 md:mt-0">
+          <a href="#contacto" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-charcoal hover:text-brand-goldDark transition-colors">
+            <span>Solicitar muestrario físico a domicilio</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Grilla de Texturas y Muestras -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Tarjeta Material 1: Carrara -->
+        <div class="glass-card rounded-2xl overflow-hidden border border-stone-200 hover:border-brand-gold transition-all duration-300 group reveal-on-scroll">
+          <div class="h-56 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=700&q=80" alt="Mármol Blanco Carrara" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-full">
+              Italia
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-serif text-xl font-bold text-brand-charcoal">Mármol Blanco Carrara</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Fondo blanco marfil con vetas gris perla difuminadas. Un clásico del Renacimiento italiano que aporta luminosidad y sofisticación atemporal.
+            </p>
+            <div class="pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] text-stone-500 font-medium">
+              <span>Acabados: Pulido / Satinado</span>
+              <span class="text-amber-800 font-semibold">Ideal Baños & Mesas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta Material 2: Granito Negro Absoluto -->
+        <div class="glass-card rounded-2xl overflow-hidden border border-stone-200 hover:border-brand-gold transition-all duration-300 group reveal-on-scroll">
+          <div class="h-56 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=700&q=80" alt="Granito Negro Absoluto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-full">
+              Brasil
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-serif text-xl font-bold text-brand-charcoal">Granito Negro Absoluto</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Piedra ígnea de grano ultrafino y color negro profundo homogéneo. Ofrece la máxima resistencia al calor de ollas y al rayado doméstico.
+            </p>
+            <div class="pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] text-stone-500 font-medium">
+              <span>Acabados: Pulido Espejo / Leather</span>
+              <span class="text-amber-800 font-semibold">Ideal Cocinas & Quinchos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta Material 3: Travertino Romano -->
+        <div class="glass-card rounded-2xl overflow-hidden border border-stone-200 hover:border-brand-gold transition-all duration-300 group reveal-on-scroll">
+          <div class="h-56 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=700&q=80" alt="Mármol Travertino" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-full">
+              Nacional / Importado
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-serif text-xl font-bold text-brand-charcoal">Mármol Travertino</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Piedra sedimentaria con textura alveolar y tonos arena cálidos. Puede utilizarse a poro abierto para un look rústico o resinado al tono.
+            </p>
+            <div class="pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] text-stone-500 font-medium">
+              <span>Acabados: Apomazado / Rústico</span>
+              <span class="text-amber-800 font-semibold">Escaleras & Revestimientos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta Material 4: Cuarzo Blanco Puro -->
+        <div class="glass-card rounded-2xl overflow-hidden border border-stone-200 hover:border-brand-gold transition-all duration-300 group reveal-on-scroll">
+          <div class="h-56 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=700&q=80" alt="Cuarzo Compacto Blanco Puro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-full">
+              Ingeniería
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-serif text-xl font-bold text-brand-charcoal">Cuarzo Compacto (Silestone)</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Superficie 93% cuarzo mineral y resina de alta tecnología. Nula absorción de café, aceite o vino y máxima higiene bactericida.
+            </p>
+            <div class="pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] text-stone-500 font-medium">
+              <span>Acabados: Pulido Nieve / Suede Mate</span>
+              <span class="text-amber-800 font-semibold">Cocinas Contemporáneas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta Material 5: Cuarcita Patagonia -->
+        <div class="glass-card rounded-2xl overflow-hidden border border-stone-200 hover:border-brand-gold transition-all duration-300 group reveal-on-scroll">
+          <div class="h-56 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80" alt="Cuarcita Patagonia Exótica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-full">
+              Piedra Fina
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-serif text-xl font-bold text-brand-charcoal">Cuarcita Exótica Patagonia</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Una de las rocas más deslumbrantes del mundo: combina fragmentos de cuarzo translúcido, feldespatos y vetas minerales de gran impacto.
+            </p>
+            <div class="pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] text-stone-500 font-medium">
+              <span>Acabados: Pulido Alto Brillo</span>
+              <span class="text-amber-800 font-semibold">Islas Monolíticas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta Material 6: Ónix Translúcido -->
+        <div class="glass-card rounded-2xl overflow-hidden border border-stone-200 hover:border-brand-gold transition-all duration-300 group reveal-on-scroll">
+          <div class="h-56 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=700&q=80" alt="Ónix Translúcido Iluminado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded-full">
+              Joyería
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-serif text-xl font-bold text-brand-charcoal">Ónix Esmeralda & Miel</h3>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Piedra semipreciosa translúcida. Al instalar tiras LED traseras, el espacio se transforma con un brillo orgánico y una atmósfera escenográfica.
+            </p>
+            <div class="pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] text-stone-500 font-medium">
+              <span>Acabados: Pulido con Backlight</span>
+              <span class="text-amber-800 font-semibold">Barras & Muros Focales</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SERVICIOS POR CATEGORÍA (3 CARDS DETALLADAS)
+       ========================================================================= -->
+  <section id="servicios" class="py-24 bg-white border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3 reveal-on-scroll">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-goldDark bg-amber-50 px-3.5 py-1.5 rounded-full">
+          Soluciones Integrales
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal">
+          Servicios Especializados por Categoría
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base">
+          Abordamos cada proyecto con asesoramiento de diseño, relevamiento láser, fabricación en taller propio y colocación especializada con cuadrillas certificadas.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Servicio 1: Cocinas -->
+        <div class="bg-brand-sand rounded-3xl p-8 border border-stone-200 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group reveal-on-scroll">
+          <div class="space-y-6">
+            <div class="h-48 rounded-2xl overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=700&q=80" alt="Cocinas e Islas de mármol" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md flex items-center justify-center text-brand-charcoal shadow-md">
+                <i data-lucide="utensils" class="w-5 h-5"></i>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <h3 class="font-serif text-2xl font-bold text-brand-charcoal">Cocinas & Islas de Autor</h3>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Superficies preparadas para la vida diaria y el disfrute gastronómico. Cuidamos cada inglete para que las vetas continúen con armonía visual perfecta.
+              </p>
+            </div>
+
+            <!-- Checklist de beneficios -->
+            <ul class="space-y-2.5 text-xs text-stone-700">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-700 flex-shrink-0 mt-0.5"></i>
+                <span>Mesadas continuas con trasforos pulidos para bachas bajo mesada.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-700 flex-shrink-0 mt-0.5"></i>
+                <span>Islas con laterales en cascada ingleteada a 45° a piso.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-700 flex-shrink-0 mt-0.5"></i>
+                <span>Alzadas y revestimientos antisalpicaduras de placa entera.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-700 flex-shrink-0 mt-0.5"></i>
+                <span>Escurridores mecanizados con fresado CNC en la misma piedra.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-8">
+            <a href="#cotizador" class="w-full btn-gold py-3.5 px-4 rounded-xl text-xs font-bold uppercase tracking-wider text-center block shadow-sm">
+              Cotizar Mesada de Cocina
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicio 2: Baños -->
+        <div class="bg-brand-sand rounded-3xl p-8 border border-stone-200 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group reveal-on-scroll">
+          <div class="space-y-6">
+            <div class="h-48 rounded-2xl overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=700&q=80" alt="Baños y Vanitories en piedra natural" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md flex items-center justify-center text-brand-charcoal shadow-md">
+                <i data-lucide="bath" class="w-5 h-5"></i>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <h3 class="font-serif text-2xl font-bold text-brand-charcoal">Baños & Spas Residenciales</h3>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Transformamos el baño en un santuario de descanso mediante vanitories escultóricos suspendidos y revestimientos de gran formato sin juntas visibles.
+              </p>
+            </div>
+
+            <!-- Checklist de beneficios -->
+            <ul class="space-y-2.5 text-xs text-stone-700">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-700 flex-shrink-0 mt-0.5"></i>
+                <span>Bachas integradas y termoformadas en la misma tabla de piedra.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-700 flex-shrink-0 mt-0.5"></i>
+                <span>Vanitories suspendidos con frentes regruesados de hasta 15 cm.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-700 flex-shrink-0 mt-0.5"></i>
+                <span>Platos de ducha a medida con textura apomazada antideslizante.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-700 flex-shrink-0 mt-0.5"></i>
+                <span>Tratamiento hidrófugo sellador previo a la instalación.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-8">
+            <a href="#cotizador" class="w-full btn-gold py-3.5 px-4 rounded-xl text-xs font-bold uppercase tracking-wider text-center block shadow-sm">
+              Cotizar Vanitory / Baño
+            </a>
+          </div>
+        </div>
+
+        <!-- Servicio 3: Proyectos Especiales -->
+        <div class="bg-brand-sand rounded-3xl p-8 border border-stone-200 flex flex-col justify-between hover:shadow-xl transition-all duration-300 group reveal-on-scroll">
+          <div class="space-y-6">
+            <div class="h-48 rounded-2xl overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=700&q=80" alt="Escaleras y Proyectos Especiales" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md flex items-center justify-center text-brand-charcoal shadow-md">
+                <i data-lucide="layers" class="w-5 h-5"></i>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <h3 class="font-serif text-2xl font-bold text-brand-charcoal">Proyectos Especiales & Arquitectura</h3>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Desarrollamos piezas a medida para estudios de arquitectura y diseñadores de interiores: escaleras flotantes, hogares a leña, barras de recepción y fachadas.
+              </p>
+            </div>
+
+            <!-- Checklist de beneficios -->
+            <ul class="space-y-2.5 text-xs text-stone-700">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-700 flex-shrink-0 mt-0.5"></i>
+                <span>Escaleras flotantes compensadas con encamisado en 4 piezas.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-700 flex-shrink-0 mt-0.5"></i>
+                <span>Hogares y chimeneas con piedras resistentes a altas temperaturas.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-700 flex-shrink-0 mt-0.5"></i>
+                <span>Barras de tragos y paneles de ónix con retroiluminación integrada.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-700 flex-shrink-0 mt-0.5"></i>
+                <span>Mesas de comedor y centros de living con tapas de diseño en mármol.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-8">
+            <a href="#contacto" class="w-full bg-brand-charcoal hover:bg-stone-800 text-white py-3.5 px-4 rounded-xl text-xs font-bold uppercase tracking-wider text-center block transition-all shadow-sm">
+              Consultar Proyecto a Medida
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       COMPARADOR TÉCNICO DE MATERIALES (TABS)
+       ========================================================================= -->
+  <section id="comparador" class="py-24 bg-brand-sand border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3 reveal-on-scroll">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-goldDark bg-stone-200/80 px-3.5 py-1.5 rounded-full">
+          Guía Técnica para Elegir Bien
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal">
+          Comparador de Materiales y Rendimiento
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base">
+          Conocé las propiedades mecánicas, niveles de resistencia y requerimientos de mantenimiento de cada piedra antes de tomar tu decisión.
+        </p>
+      </div>
+
+      <!-- Selector de Tabs -->
+      <div class="flex flex-wrap justify-center gap-2 mb-10 reveal-on-scroll">
+        <button data-material="marmol" class="comp-tab-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-[#121417] text-white shadow-sm">
+          Mármol Natural
+        </button>
+        <button data-material="granito" class="comp-tab-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-white text-stone-700 hover:bg-stone-100 border border-stone-200">
+          Granito Natural
+        </button>
+        <button data-material="cuarzo" class="comp-tab-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-white text-stone-700 hover:bg-stone-100 border border-stone-200">
+          Cuarzo Compacto
+        </button>
+        <button data-material="sinterizado" class="comp-tab-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-white text-stone-700 hover:bg-stone-100 border border-stone-200">
+          Superficie Sinterizada (Dekton)
+        </button>
+        <button data-material="onix" class="comp-tab-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-white text-stone-700 hover:bg-stone-100 border border-stone-200">
+          Ónix & Cuarcitas
+        </button>
+      </div>
+
+      <!-- Panel de Detalles del Material Seleccionado -->
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-stone-200 shadow-xl reveal-on-scroll">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Imagen y Datos Básicos -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="h-64 sm:h-72 rounded-2xl overflow-hidden relative shadow-md bg-stone-900">
+              <img id="comp-img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Mármol Natural" class="w-full h-full object-cover">
+            </div>
+            
+            <div class="bg-white p-4 rounded-xl border border-stone-200 space-y-2 text-xs">
+              <div class="flex justify-between">
+                <span class="text-stone-500 font-medium">Nivel de Mantenimiento:</span>
+                <span id="comp-maintenance" class="font-bold text-stone-800">Medio / Requiere Sellado Anual</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-stone-500 font-medium">Porosidad Superficial:</span>
+                <span id="comp-porosity" class="font-bold text-stone-800">Media-Alta (Caliza metamórfica)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Matriz de Evaluación y Pros/Contras -->
+          <div class="lg:col-span-7 space-y-6">
+            <div>
+              <h3 id="comp-title" class="font-serif text-2xl sm:text-3xl font-bold text-brand-charcoal">Mármol Natural (Carrara, Marquina, Travertino)</h3>
+              <p id="comp-subtitle" class="text-stone-600 text-xs sm:text-sm mt-1">La piedra noble por excelencia, con vetas únicas e irrepetibles creadas por la geología.</p>
+            </div>
+
+            <!-- Barras de Nivel / Métricas -->
+            <div class="space-y-4 bg-white p-5 rounded-2xl border border-stone-200">
+              
+              <!-- Métrica Calor -->
+              <div>
+                <div class="flex justify-between text-xs font-bold text-stone-700 mb-1">
+                  <span>Resistencia a Altas Temperaturas (Ollas calientes)</span>
+                  <span id="comp-val-heat" class="text-amber-800">85%</span>
+                </div>
+                <div class="w-full bg-stone-100 h-2.5 rounded-full overflow-hidden">
+                  <div id="comp-bar-heat" class="meter-bar-fill h-full bg-amber-600 rounded-full" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <!-- Métrica Rayado -->
+              <div>
+                <div class="flex justify-between text-xs font-bold text-stone-700 mb-1">
+                  <span>Dureza y Resistencia al Rayado (Cuchillos y roces)</span>
+                  <span id="comp-val-scratch" class="text-amber-800">70%</span>
+                </div>
+                <div class="w-full bg-stone-100 h-2.5 rounded-full overflow-hidden">
+                  <div id="comp-bar-scratch" class="meter-bar-fill h-full bg-amber-600 rounded-full" style="width: 70%;"></div>
+                </div>
+              </div>
+
+              <!-- Métrica Manchas -->
+              <div>
+                <div class="flex justify-between text-xs font-bold text-stone-700 mb-1">
+                  <span>Resistencia a Manchas y Ácidos (Limón, vino, salsas)</span>
+                  <span id="comp-val-stain" class="text-amber-800">65%</span>
+                </div>
+                <div class="w-full bg-stone-100 h-2.5 rounded-full overflow-hidden">
+                  <div id="comp-bar-stain" class="meter-bar-fill h-full bg-amber-600 rounded-full" style="width: 65%;"></div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Ideal Para -->
+            <div class="text-xs bg-amber-50/70 p-4 rounded-xl border border-amber-200/60">
+              <span class="font-bold text-amber-900 block mb-1">Ambientes y aplicaciones ideales:</span>
+              <p id="comp-ideal" class="text-stone-700 leading-relaxed">
+                Baños de diseño, vanitories, hogares a leña, mesas de living, revestimientos de pared y pisos de recepción.
+              </p>
+            </div>
+
+            <!-- Pros y Contras en 2 Columnas -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="space-y-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-emerald-800 flex items-center gap-1.5">
+                  <i data-lucide="thumbs-up" class="w-3.5 h-3.5"></i>
+                  <span>Principales Ventajas</span>
+                </span>
+                <ul id="comp-pros-list" class="space-y-1.5">
+                  <li class="flex items-start gap-2 text-xs text-stone-700">
+                    <span class="text-emerald-700 font-bold">✓</span>
+                    <span>Estética inigualable y de altísimo valor arquitectónico.</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-xs text-stone-700">
+                    <span class="text-emerald-700 font-bold">✓</span>
+                    <span>Cada tabla es una pieza de arte natural irrepetible.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="space-y-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-amber-800 flex items-center gap-1.5">
+                  <i data-lucide="alert-circle" class="w-3.5 h-3.5"></i>
+                  <span>Cuidados a Considerar</span>
+                </span>
+                <ul id="comp-cons-list" class="space-y-1.5">
+                  <li class="flex items-start gap-2 text-xs text-stone-600">
+                    <span class="text-amber-700 font-bold">!</span>
+                    <span>Sensible a ácidos si no cuenta con hidrofugado periódico.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       GALERÍA DE PROYECTOS FILTRABLE
+       ========================================================================= -->
+  <section id="proyectos" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3 reveal-on-scroll">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-goldDark bg-amber-50 px-3.5 py-1.5 rounded-full">
+          Obras Reales
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal">
+          Galería de Proyectos Entregados
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base">
+          Explorá nuestros últimos trabajos en residencias privadas, desarrollos y estudios de arquitectura. Hacé clic en cualquier proyecto para ver la ficha técnica completa.
+        </p>
+      </div>
+
+      <!-- Filtros de Galería -->
+      <div class="flex flex-wrap justify-center gap-2 mb-12 reveal-on-scroll">
+        <button data-filter="todos" class="gallery-filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-[#121417] text-white">
+          Todos los Trabajos
+        </button>
+        <button data-filter="cocinas" class="gallery-filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-stone-100 text-stone-700 hover:bg-stone-200">
+          Cocinas & Islas
+        </button>
+        <button data-filter="banos" class="gallery-filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-stone-100 text-stone-700 hover:bg-stone-200">
+          Baños & Vanitories
+        </button>
+        <button data-filter="exteriores" class="gallery-filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-stone-100 text-stone-700 hover:bg-stone-200">
+          Quinchos & Exteriores
+        </button>
+        <button data-filter="especiales" class="gallery-filter-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-stone-100 text-stone-700 hover:bg-stone-200">
+          Escaleras & Muros
+        </button>
+      </div>
+
+      <!-- Grilla Dinámica de Proyectos -->
+      <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Renderizado dinámicamente por JavaScript -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PROCESO DE TRABAJO EN 4 PASOS
+       ========================================================================= -->
+  <section id="proceso" class="py-24 bg-brand-charcoal text-white relative overflow-hidden bg-dark-marble">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-20 space-y-3 reveal-on-scroll">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-gold bg-stone-800/80 px-3.5 py-1.5 rounded-full border border-brand-gold/30">
+          Precisión Milimétrica
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
+          Nuestro Proceso Artesanal en 4 Fases
+        </h2>
+        <p class="text-stone-300 text-sm sm:text-base">
+          Desde la primera toma de medidas hasta la colocación final, garantizamos un control de calidad riguroso en cada etapa.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+        
+        <!-- Línea conectora desktop -->
+        <div class="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-brand-gold/20 via-brand-gold to-brand-gold/20 -translate-y-16 z-0"></div>
+
+        <!-- Paso 1 -->
+        <div class="glass-card-dark p-6 rounded-3xl relative z-10 space-y-4 reveal-on-scroll">
+          <div class="w-14 h-14 rounded-2xl bg-brand-gold text-brand-charcoal flex items-center justify-center font-serif font-bold text-xl shadow-lg">
+            01
+          </div>
+          <h3 class="font-serif text-xl font-bold text-white">Relevamiento & Medición Láser</h3>
+          <p class="text-xs text-stone-300 leading-relaxed">
+            Visitamos la obra con escáneres láser y plantillado digital para registrar falsas escuadras y desniveles de paredes con tolerancia de 0.5 mm.
+          </p>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="glass-card-dark p-6 rounded-3xl relative z-10 space-y-4 reveal-on-scroll">
+          <div class="w-14 h-14 rounded-2xl bg-brand-gold text-brand-charcoal flex items-center justify-center font-serif font-bold text-xl shadow-lg">
+            02
+          </div>
+          <h3 class="font-serif text-xl font-bold text-white">Selección de Placa & Render</h3>
+          <p class="text-xs text-stone-300 leading-relaxed">
+            Elegís la tabla exacta en nuestro showroom o te enviamos el desglose fotográfico en alta resolución para alinear la continuidad de las vetas.
+          </p>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="glass-card-dark p-6 rounded-3xl relative z-10 space-y-4 reveal-on-scroll">
+          <div class="w-14 h-14 rounded-2xl bg-brand-gold text-brand-charcoal flex items-center justify-center font-serif font-bold text-xl shadow-lg">
+            03
+          </div>
+          <h3 class="font-serif text-xl font-bold text-white">Corte CNC & Pulido Robotizado</h3>
+          <p class="text-xs text-stone-300 leading-relaxed">
+            Mecanizado de precisión mediante corte por chorro de agua (Waterjet), ingletes a 45° sellados al vacío y pulido artesanal de cantos.
+          </p>
+        </div>
+
+        <!-- Paso 4 -->
+        <div class="glass-card-dark p-6 rounded-3xl relative z-10 space-y-4 reveal-on-scroll">
+          <div class="w-14 h-14 rounded-2xl bg-brand-gold text-brand-charcoal flex items-center justify-center font-serif font-bold text-xl shadow-lg">
+            04
+          </div>
+          <h3 class="font-serif text-xl font-bold text-white">Colocación & Sellado Hidrófugo</h3>
+          <p class="text-xs text-stone-300 leading-relaxed">
+            Nuestros marmoleros oficiales instalan, nivelan y sellan la mesada con resinas de alta adherencia y tratamiento anti-manchas certificado.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       TESTIMONIOS DE CLIENTES
+       ========================================================================= -->
+  <section class="py-24 bg-brand-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3 reveal-on-scroll">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-goldDark bg-stone-200/80 px-3.5 py-1.5 rounded-full">
+          Experiencias Reales
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal">
+          Lo que Dicen Quienes Confían en Nosotros
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base">
+          Arquitectos, desarrolladores y familias que transformaron sus hogares con nuestras piedras naturales.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Reseña 1 -->
+        <div class="glass-card p-8 rounded-3xl border border-stone-200 shadow-sm flex flex-col justify-between reveal-on-scroll">
+          <div class="space-y-4">
+            <div class="flex text-amber-500 gap-1">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-stone-700 leading-relaxed italic">
+              "Como arquitecta valoro enormemente que la veta de la cuarcita continúe de manera exacta en la cascada a piso. El plantillado láser evitó cualquier problema con las paredes fuera de escuadra. Excelencia total."
+            </p>
+          </div>
+          <div class="pt-6 border-t border-stone-100 flex items-center gap-3 mt-6">
+            <div class="w-10 h-10 rounded-full bg-stone-800 text-brand-gold flex items-center justify-center font-bold text-sm">
+              VG
+            </div>
+            <div>
+              <p class="text-xs font-bold text-stone-900">Arq. Valeria Gutiérrez</p>
+              <p class="text-[11px] text-stone-500">Cocina Completa & Isla en Nordelta</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reseña 2 -->
+        <div class="glass-card p-8 rounded-3xl border border-stone-200 shadow-sm flex flex-col justify-between reveal-on-scroll">
+          <div class="space-y-4">
+            <div class="flex text-amber-500 gap-1">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-stone-700 leading-relaxed italic">
+              "Nos asesoraron entre mármol y granito negro para el quincho. Optamos por Granito Negro Absoluto en terminación Leather y quedó espectacular. Soportó el calor de las brasas sin un solo detalle. Cumplieron con los plazos prometidos."
+            </p>
+          </div>
+          <div class="pt-6 border-t border-stone-100 flex items-center gap-3 mt-6">
+            <div class="w-10 h-10 rounded-full bg-stone-800 text-brand-gold flex items-center justify-center font-bold text-sm">
+              MS
+            </div>
+            <div>
+              <p class="text-xs font-bold text-stone-900">Martín Santillán</p>
+              <p class="text-[11px] text-stone-500">Mesada de Quincho en Pilar</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reseña 3 -->
+        <div class="glass-card p-8 rounded-3xl border border-stone-200 shadow-sm flex flex-col justify-between reveal-on-scroll">
+          <div class="space-y-4">
+            <div class="flex text-amber-500 gap-1">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-stone-700 leading-relaxed italic">
+              "Hicimos el vanitory de la suite con doble bacha integrada en Mármol Carrara. El nivel de terminación y el pulido artesanal parecen salidos de un hotel 5 estrellas europeo. Súper recomendables."
+            </p>
+          </div>
+          <div class="pt-6 border-t border-stone-100 flex items-center gap-3 mt-6">
+            <div class="w-10 h-10 rounded-full bg-stone-800 text-brand-gold flex items-center justify-center font-bold text-sm">
+              CL
+            </div>
+            <div>
+              <p class="text-xs font-bold text-stone-900">Carolina Larrea</p>
+              <p class="text-[11px] text-stone-500">Master Suite en Belgrano</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PREGUNTAS FRECUENTES (ACORDEÓN CON BUSCADOR)
+       ========================================================================= -->
+  <section id="preguntas" class="py-24 bg-white border-t border-stone-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12 space-y-3 reveal-on-scroll">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-goldDark bg-amber-50 px-3.5 py-1.5 rounded-full">
+          Despejá tus Dudas
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal">
+          Preguntas Frecuentes
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base">
+          Información clara sobre durabilidad, tiempos de entrega, mantenimiento y cobertura de instalación.
+        </p>
+      </div>
+
+      <!-- Buscador de Preguntas en Vivo -->
+      <div class="relative mb-8 reveal-on-scroll">
+        <i data-lucide="search" class="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"></i>
+        <input type="text" id="faq-search-input" placeholder="Buscar por tema (ej: manchas, calor, tiempos de entrega, envíos)..." class="w-full pl-12 pr-4 py-3.5 rounded-2xl bg-brand-sand border border-stone-200 text-xs sm:text-sm text-stone-800 focus:outline-none focus:border-brand-gold shadow-sm">
+      </div>
+
+      <!-- Lista de Acordeones -->
+      <div class="space-y-4 reveal-on-scroll">
+        
+        <!-- Pregunta 1 -->
+        <div class="faq-item bg-brand-sand rounded-2xl border border-stone-200 overflow-hidden active">
+          <button class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-serif font-bold text-base sm:text-lg text-brand-charcoal hover:text-brand-goldDark transition-colors">
+            <span>¿Cuánto tiempo dura una mesada de mármol o granito natural?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-stone-400 transition-transform duration-300 flex-shrink-0"></i>
+          </button>
+          <div class="faq-content px-6 pb-6 text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Las piedras naturales como el mármol, granito y cuarcita son materiales geológicos eternos. Con una instalación profesional y un sellado hidrófugo periódico, una mesada dura toda la vida y puede ser repulida o restaurada décadas después para recuperar su brillo original del primer día.
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="faq-item bg-brand-sand rounded-2xl border border-stone-200 overflow-hidden">
+          <button class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-serif font-bold text-base sm:text-lg text-brand-charcoal hover:text-brand-goldDark transition-colors">
+            <span>¿Cuál es la diferencia fundamental entre Mármol, Granito y Cuarzo?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-stone-400 transition-transform duration-300 flex-shrink-0"></i>
+          </button>
+          <div class="faq-content px-6 pb-6 text-xs sm:text-sm text-stone-600 leading-relaxed">
+            El <strong>mármol</strong> es una roca metamórfica caliza de belleza clásica y vetas dramáticas, ideal para baños y muros. El <strong>granito</strong> es una roca ígnea volcánica de dureza extrema, resistente al rayado y a ollas hirviendo (ideal para cocinas de alto uso). El <strong>cuarzo compacto</strong> (Silestone) es un producto tecnológico con cero porosidad que no se mancha con nada, aunque no tolera calor extremo directo.
+          </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="faq-item bg-brand-sand rounded-2xl border border-stone-200 overflow-hidden">
+          <button class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-serif font-bold text-base sm:text-lg text-brand-charcoal hover:text-brand-goldDark transition-colors">
+            <span>¿Cuánto demora la fabricación y colocación desde que se toman las medidas?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-stone-400 transition-transform duration-300 flex-shrink-0"></i>
+          </button>
+          <div class="faq-content px-6 pb-6 text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Una vez realizado el relevamiento y plantillado en obra sobre los muebles ya fijados, el tiempo estándar de corte CNC, ingleteado, pulido y control de calidad en taller es de <strong>7 a 10 días hábiles</strong>. La colocación en domicilio se completa habitualmente en una sola jornada de trabajo.
+          </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="faq-item bg-brand-sand rounded-2xl border border-stone-200 overflow-hidden">
+          <button class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-serif font-bold text-base sm:text-lg text-brand-charcoal hover:text-brand-goldDark transition-colors">
+            <span>¿El mármol se mancha con limón o vino? ¿Cómo se protege?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-stone-400 transition-transform duration-300 flex-shrink-0"></i>
+          </button>
+          <div class="faq-content px-6 pb-6 text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Por su composición cálcica, los ácidos pueden atacar el brillo si permanecen expuestos por mucho tiempo. Por eso entregamos todas nuestras piezas tratadas con sellador oleo-hidrófugo de grado alimenticio que bloquea la penetración de líquidos. Además, recomendamos la limpieza diaria con agua tibia y jabón neutro.
+          </div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="faq-item bg-brand-sand rounded-2xl border border-stone-200 overflow-hidden">
+          <button class="faq-trigger w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-serif font-bold text-base sm:text-lg text-brand-charcoal hover:text-brand-goldDark transition-colors">
+            <span>¿Hacen relevamientos y envíos a countries, barrios cerrados o interior?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-stone-400 transition-transform duration-300 flex-shrink-0"></i>
+          </button>
+          <div class="faq-content px-6 pb-6 text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Sí. Contamos con flota propia de vehículos equipados con caballetes técnicos para el transporte seguro de placas pesadas sin riesgo de fisuras. Cubrimos CABA, Zona Norte (Nordelta, Tigre, San Isidro, Pilar), Zona Oeste, Zona Sur y despachamos proyectos embalados en cajas de madera para todo el país.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FORMULARIO DE COTIZACIÓN FINAL & CONTACTO
+       ========================================================================= -->
+  <section id="contacto" class="py-24 bg-brand-sand border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Información de Contacto y Visitas -->
+        <div class="lg:col-span-5 space-y-8 reveal-on-scroll">
+          <div class="space-y-3">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-goldDark bg-stone-200/80 px-3.5 py-1.5 rounded-full">
+              Atención Personalizada
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal">
+              Hagamos Realidad tu Próximo Espacio
+            </h2>
+            <p class="text-stone-600 text-sm leading-relaxed">
+              Completá el formulario para recibir asesoramiento técnico y coordinar una visita a domicilio con muestras físicas o un recorrido guiado por nuestro showroom de tablas.
+            </p>
+          </div>
+
+          <div class="space-y-5 text-xs text-stone-700">
+            
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-stone-200 shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-800 flex-shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-stone-900 text-sm">Showroom & Taller Central</p>
+                <p class="text-stone-500">Av. Del Mármol y Diseño 2450, CABA / Zona Norte</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-stone-200 shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-800 flex-shrink-0">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-stone-900 text-sm">Línea Directa & WhatsApp</p>
+                <p class="text-stone-500">+54 (11) 5555-4321 / +54 (11) 5555-4322</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-stone-200 shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-800 flex-shrink-0">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="font-bold text-stone-900 text-sm">Horarios de Atención</p>
+                <p class="text-stone-500">Lunes a Viernes: 08:30 a 18:30 hs | Sábados: 09:00 a 13:30 hs</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-stone-200 shadow-xl reveal-on-scroll">
+          <h3 class="font-serif text-2xl font-bold text-brand-charcoal mb-2">Solicitud de Presupuesto Formal</h3>
+          <p class="text-xs text-stone-500 mb-8">Te responderemos en menos de 2 horas con el desglose técnico y las muestras disponibles.</p>
+
+          <form id="quote-final-form" class="space-y-5">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="form-name" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1.5">Nombre y Apellido *</label>
+                <input type="text" id="form-name" required placeholder="Ej: Santiago Morales" class="w-full px-4 py-3 rounded-xl border border-stone-200 text-xs sm:text-sm text-stone-800 focus:outline-none focus:border-brand-gold shadow-sm">
+              </div>
+
+              <div>
+                <label for="form-phone" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1.5">Teléfono / WhatsApp *</label>
+                <input type="tel" id="form-phone" required placeholder="Ej: 11 5555 4321" class="w-full px-4 py-3 rounded-xl border border-stone-200 text-xs sm:text-sm text-stone-800 focus:outline-none focus:border-brand-gold shadow-sm">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="form-email" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1.5">Email de Contacto</label>
+                <input type="email" id="form-email" placeholder="ejemplo@correo.com" class="w-full px-4 py-3 rounded-xl border border-stone-200 text-xs sm:text-sm text-stone-800 focus:outline-none focus:border-brand-gold shadow-sm">
+              </div>
+
+              <div>
+                <label for="form-location" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1.5">Localidad / Barrio</label>
+                <input type="text" id="form-location" placeholder="Ej: Nordelta, Pilar, Belgrano..." class="w-full px-4 py-3 rounded-xl border border-stone-200 text-xs sm:text-sm text-stone-800 focus:outline-none focus:border-brand-gold shadow-sm">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="form-space" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1.5">Tipo de Proyecto / Espacio</label>
+                <select id="form-space" class="w-full px-4 py-3 rounded-xl border border-stone-200 text-xs sm:text-sm text-stone-800 focus:outline-none focus:border-brand-gold shadow-sm">
+                  <option value="Cocina con Isla">Cocina con Isla</option>
+                  <option value="Mesada de Cocina Lineal / L">Mesada de Cocina Lineal / en L</option>
+                  <option value="Vanitory / Baño">Vanitory / Baño Completo</option>
+                  <option value="Quincho / Parrilla">Quincho / Parrilla Exterior</option>
+                  <option value="Escalera Flotante">Escalera Flotante</option>
+                  <option value="Hogar / Chimenea">Hogar / Revestimiento Pared</option>
+                  <option value="Obra Integral / Varios Ambientes">Obra Integral / Varios Ambientes</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="form-material" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1.5">Material de Preferencia</label>
+                <select id="form-material" class="w-full px-4 py-3 rounded-xl border border-stone-200 text-xs sm:text-sm text-stone-800 focus:outline-none focus:border-brand-gold shadow-sm">
+                  <option value="Granito Negro Absoluto">Granito Negro Absoluto</option>
+                  <option value="Mármol Blanco Carrara">Mármol Blanco Carrara</option>
+                  <option value="Cuarzo Compacto / Silestone">Cuarzo Compacto / Silestone</option>
+                  <option value="Superficie Sinterizada Dekton">Superficie Sinterizada Dekton</option>
+                  <option value="Mármol Travertino">Mármol Travertino</option>
+                  <option value="Cuarcita Patagonia">Cuarcita Patagonia</option>
+                  <option value="Aún no estoy seguro, necesito asesoramiento">Aún no estoy seguro, necesito asesoramiento</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="form-comments" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1.5">Medidas aproximadas o detalles del proyecto</label>
+              <textarea id="form-comments" rows="3" placeholder="Contanos sobre las dimensiones, si tenés plano en PDF/CAD o el estilo que buscás..." class="w-full px-4 py-3 rounded-xl border border-stone-200 text-xs sm:text-sm text-stone-800 focus:outline-none focus:border-brand-gold shadow-sm"></textarea>
+            </div>
+
+            <button type="submit" class="w-full btn-gold py-4 rounded-xl text-xs uppercase font-bold tracking-wider flex items-center justify-center gap-2 shadow-lg">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>Enviar Solicitud y Recibir Presupuesto</span>
+            </button>
+
+            <p class="text-[11px] text-stone-400 text-center">
+              🔒 Tus datos son confidenciales y no enviamos spam. Te contactaremos únicamente para brindarte la cotización solicitada.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="bg-brand-charcoal text-white pt-16 pb-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800 text-xs">
+        
+        <!-- Info Brand -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-brand-gold font-serif text-xl font-bold">
+              A
+            </div>
+            <div>
+              <span class="font-serif text-xl font-bold tracking-tight text-white block leading-none">AURA</span>
+              <span class="text-[9px] tracking-[0.2em] uppercase font-semibold text-stone-400 block mt-0.5">Marmolería de Autor</span>
+            </div>
+          </div>
+          <p class="text-stone-400 leading-relaxed max-w-sm">
+            Taller industrial y estudio de diseño especializado en corte de precisión CNC y colocación garantizada de piedras naturales, granitos y cuarzos para proyectos residenciales y comerciales.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="#" aria-label="Instagram" class="w-8 h-8 rounded-full bg-stone-800 flex items-center justify-center text-stone-400 hover:text-brand-gold hover:bg-stone-700 transition-colors">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="#" aria-label="Facebook" class="w-8 h-8 rounded-full bg-stone-800 flex items-center justify-center text-stone-400 hover:text-brand-gold hover:bg-stone-700 transition-colors">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="w-8 h-8 rounded-full bg-stone-800 flex items-center justify-center text-stone-400 hover:text-brand-gold hover:bg-stone-700 transition-colors">
+              <i data-lucide="linkedin" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Enlaces Rápidos -->
+        <div class="space-y-3">
+          <h4 class="font-serif font-bold text-white text-sm">Materiales</h4>
+          <ul class="space-y-2 text-stone-400">
+            <li><a href="#materiales" class="hover:text-white transition-colors">Mármol Blanco Carrara</a></li>
+            <li><a href="#materiales" class="hover:text-white transition-colors">Granito Negro Absoluto</a></li>
+            <li><a href="#materiales" class="hover:text-white transition-colors">Cuarzo Silestone / Purastone</a></li>
+            <li><a href="#materiales" class="hover:text-white transition-colors">Superficies Dekton</a></li>
+            <li><a href="#materiales" class="hover:text-white transition-colors">Mármol Travertino</a></li>
+            <li><a href="#materiales" class="hover:text-white transition-colors">Cuarcitas Exóticas</a></li>
+          </ul>
+        </div>
+
+        <!-- Servicios -->
+        <div class="space-y-3">
+          <h4 class="font-serif font-bold text-white text-sm">Especialidades</h4>
+          <ul class="space-y-2 text-stone-400">
+            <li><a href="#servicios" class="hover:text-white transition-colors">Mesadas e Islas de Cocina</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">Vanitories y Bachas Monolíticas</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">Quinchos y Barbacoas</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">Escaleras Compensadas Flotantes</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">Hogares y Paneles de Ónix</a></li>
+            <li><a href="#servicios" class="hover:text-white transition-colors">Plantillado Láser In Situ</a></li>
+          </ul>
+        </div>
+
+        <!-- Cobertura -->
+        <div class="space-y-3">
+          <h4 class="font-serif font-bold text-white text-sm">Zona de Cobertura</h4>
+          <ul class="space-y-2 text-stone-400">
+            <li>CABA (Palermo, Belgrano, Recoleta)</li>
+            <li>Zona Norte (Tigre, Nordelta, San Isidro)</li>
+            <li>Pilar & Escobar</li>
+            <li>Zona Oeste & Zona Sur</li>
+            <li>Envíos técnicos a todo el país</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright y Certificaciones -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-stone-500 text-[11px] gap-4">
+        <p>© 2026 AURA Marmolería & Superficies de Autor. Todos los derechos reservados.</p>
+        <p class="flex items-center gap-1 text-stone-400">
+          <span>Diseño de alta gama y corte industrial certificado</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MODAL LIGHTBOX DE PROYECTO
+       ========================================================================= -->
+  <div id="project-modal" class="modal-overlay fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 sm:p-6">
+    <div class="modal-box bg-white w-full max-w-4xl rounded-3xl p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button id="modal-close" aria-label="Cerrar ventana" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-700 flex items-center justify-center transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div id="modal-dynamic-content">
+        <!-- Inyectado dinámicamente al hacer clic en un proyecto -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       BOTÓN FLOTANTE DE WHATSAPP CON CARD DINÁMICA
+       ========================================================================= -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    
+    <!-- Mini Popup Card -->
+    <div id="wa-floating-card" class="hidden mb-3 w-80 bg-white rounded-2xl shadow-2xl border border-stone-200 overflow-hidden transform transition-all duration-300">
+      <div class="bg-brand-charcoal p-4 text-white flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="relative">
+            <div class="w-9 h-9 rounded-full bg-brand-gold text-brand-charcoal font-serif font-bold flex items-center justify-center">
+              A
+            </div>
+            <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-brand-charcoal"></span>
+          </div>
+          <div>
+            <p class="text-xs font-bold">Asesor Técnico AURA</p>
+            <p class="text-[10px] text-stone-400">Respuesta promedio: &lt; 15 min</p>
+          </div>
+        </div>
+        <button id="wa-card-close" aria-label="Cerrar chat" class="text-stone-400 hover:text-white">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <div class="p-4 bg-brand-sand space-y-3 text-xs">
+        <div class="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-stone-200 text-stone-700">
+          ¡Hola! 👋 ¿Tenés alguna duda con tu mesada o querés que te asesoremos sobre tipos de mármol o granito para tu proyecto?
+        </div>
+        
+        <a href="https://wa.me/5491155554321?text=Hola%20AURA%20Marmoler%C3%ADa,%20quisiera%20consultar%20por%20un%20presupuesto%20personalizado." target="_blank" class="w-full btn-gold py-2.5 rounded-xl font-bold text-center block text-[11px] uppercase tracking-wider shadow-sm flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Iniciar conversación</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Botón Flotante Redondo -->
+    <button id="wa-floating-btn" aria-label="Abrir WhatsApp" class="w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 focus:outline-none relative">
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+      <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-amber-400 border-2 border-white pulse-dot"></span>
+    </button>
+
+  </div>
+
+  <!-- =========================================================================
+       NOTIFICACIÓN TOAST
+       ========================================================================= -->
+  <div id="toast-notification" class="toast fixed bottom-24 left-1/2 -translate-x-1/2 z-50 bg-brand-charcoal text-white px-6 py-3.5 rounded-2xl shadow-2xl border border-brand-gold/40 flex items-center gap-3 text-xs font-semibold">
+    <i data-lucide="check-circle" class="w-5 h-5 text-amber-300"></i>
+    <span id="toast-message">Operación realizada con éxito</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
